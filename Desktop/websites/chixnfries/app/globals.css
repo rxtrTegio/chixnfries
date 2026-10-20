@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orange: #FF5A1F;
+  --color-cream: #FFF8E7;
+  --color-darkgreen: #1F3A2E;
+  --color-orange-dark: #E04510;
+  --color-orange-light: #FF7A45;
+  --color-card-bg: #FFFDF5;
+
+  --font-bowlby: var(--font-bowlby);
+  --font-poppins: var(--font-poppins);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFF8E7;
+  color: #1F3A2E;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-bowlby), sans-serif;
+}
+
+/* Navbar glass effect */
+.navbar-glass {
+  background: rgba(31, 58, 46, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Orange glow button */
+.btn-orange {
+  background: linear-gradient(135deg, #FF5A1F 0%, #FF7A45 100%);
+  color: white;
+  font-weight: 700;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(255, 90, 31, 0.4);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 90, 31, 0.55);
+  background: linear-gradient(135deg, #E04510 0%, #FF5A1F 100%);
+}
+
+.btn-outline {
+  border: 2.5px solid white;
+  color: white;
+  font-weight: 700;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+  background: transparent;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
+
+/* Menu card */
+.menu-card {
+  background: #FFFDF5;
+  border-radius: 20px;
+  border: 2px solid rgba(255,90,31,0.12);
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 12px rgba(31,58,46,0.06);
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(255,90,31,0.18);
+  border-color: rgba(255,90,31,0.35);
+}
+
+/* Price badge */
+.price-badge {
+  font-family: var(--font-bowlby), sans-serif;
+  color: #FF5A1F;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Category header pill */
+.cat-pill {
+  display: inline-block;
+  background: #FF5A1F;
+  color: white;
+  font-family: var(--font-bowlby), sans-serif;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+}
+
+/* Sauce badge */
+.badge-og { background: #2D6A4F; color: white; }
+.badge-conquezo { background: #C62828; color: white; }
+.badge-hothoney { background: #F9A825; color: #1F3A2E; }
+
+.sauce-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
+/* Hero overlay */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 90, 31, 0.75) 0%,
+    rgba(31, 58, 46, 0.55) 100%
+  );
+}
+
+/* Scroll fade-in animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fadeUp 0.65s ease both;
+}
+
+/* Float animation for scroll cue */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+.float-anim { animation: float 3s ease-in-out infinite; }
