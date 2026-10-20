@@ -5,9 +5,14 @@ export default function Footer() {
         <span className="font-display text-white text-2xl tracking-wide">
           Chix <span className="text-orange-400">n'</span> Fries
         </span>
-        <p className="text-sm max-w-xs">
-          Crispy. Saucy. Loaded. — order by phone today.
+        <p className="text-sm max-w-xs italic opacity-80">
+          the perfect pair, crispy and fair 🍗🍟
         </p>
+        <div className="flex flex-col sm:flex-row gap-3 text-xs text-white/55 text-center">
+          <span>⏱﹎ Mon – Sat &nbsp;|&nbsp; 6PM – 2AM</span>
+          <span className="hidden sm:inline text-white/20">·</span>
+          <span>📍 1055 Pandacan St., Pandacan, Manila</span>
+        </div>
         <a
           href="tel:09324711606"
           className="text-orange-400 font-bold hover:text-orange-300 transition-colors text-sm"

@@ -47,11 +47,7 @@ export default function VisitSection() {
               <div className="space-y-2 text-sm text-darkgreen/80">
                 <div className="flex justify-between">
                   <span className="font-semibold">Mon – Sat</span>
-                  <span>10:00 AM – 9:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold">Sunday</span>
-                  <span>11:00 AM – 8:00 PM</span>
+                  <span>6:00 PM – 2:00 AM</span>
                 </div>
               </div>
             </div>
@@ -69,6 +65,17 @@ export default function VisitSection() {
                 0932 471 1606
               </a>
               <p className="text-xs text-darkgreen/50 mt-1">Call or text to order</p>
+            </div>
+
+            {/* Address */}
+            <div className="menu-card p-6">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-2xl">📍</span>
+                <h3 className="font-display text-xl text-darkgreen">Address</h3>
+              </div>
+              <p className="text-sm text-darkgreen/80 font-semibold leading-snug">
+                1055 Pandacan St.<br />Pandacan, Manila
+              </p>
             </div>
 
             {/* CTA */}

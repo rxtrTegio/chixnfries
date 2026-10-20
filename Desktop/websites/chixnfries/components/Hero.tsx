@@ -35,7 +35,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-5 max-w-3xl mx-auto fade-up">
         {/* Tag */}
         <span className="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6 border border-white/30">
-          🍗 Now Open — Order by Call
+          🍗 the perfect pair, crispy and fair 🍟
         </span>
 
         <h1 className="font-display text-white text-5xl sm:text-6xl md:text-8xl leading-none mb-6 drop-shadow-2xl">
@@ -45,10 +45,21 @@ export default function Hero() {
           Loaded.
         </h1>
 
-        <p className="text-white/90 text-lg sm:text-xl font-medium mb-10 max-w-lg mx-auto leading-relaxed">
+        <p className="text-white/90 text-lg sm:text-xl font-medium mb-6 max-w-lg mx-auto leading-relaxed">
           The crunchiest chicken in town — choose your mix-in, pick your sauce,
           and dig in.
         </p>
+
+        {/* Quick info strip */}
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-10 text-white/80 text-sm font-medium">
+          <span className="flex items-center gap-1.5">
+            <span>⏱</span> Mon – Sat &nbsp;|&nbsp; 6PM – 2AM
+          </span>
+          <span className="hidden sm:block text-white/30">·</span>
+          <span className="flex items-center gap-1.5">
+            <span>📍</span> 1055 Pandacan St., Pandacan, Manila
+          </span>
+        </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
